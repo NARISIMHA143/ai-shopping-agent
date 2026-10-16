@@ -17,8 +17,8 @@ GROQ_API_KEY=os.getenv("GROQ_API_KEY")
 
 DB_PATH = os.path.join(os.path.dirname(__file__), "store.db")
 
-llm = ChatGroq(model="qwen/qwen3-32b", temperature=0)
-vision_llm = ChatGroq(model="meta-llama/llama-4-scout-17b-16e-instruct", temperature=0)
+llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0)
+vision_llm = ChatGroq(model="qwen/qwen3.8-27b", temperature=0)
 
 
 # ---------------------------------------------------------------------------
